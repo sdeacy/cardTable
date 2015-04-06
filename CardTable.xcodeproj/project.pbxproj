@@ -16,7 +16,6 @@
 		FEE98DCC1AC9D47600032605 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE98DCA1AC9D47600032605 /* LaunchScreen.xib */; };
 		FEE98DD81AC9D47600032605 /* CardTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DD71AC9D47600032605 /* CardTableTests.m */; };
 		FEE98DF01AD15F1900032605 /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DEF1AD15F1900032605 /* CardView.m */; };
-		FEE98DF31AD15F7F00032605 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DF21AD15F7F00032605 /* Card.m */; };
 		FEE98DF61AD161C700032605 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DF51AD161C700032605 /* Deck.m */; };
 /* End PBXBuildFile section */
 
@@ -47,8 +46,6 @@
 		FEE98DD71AC9D47600032605 /* CardTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardTableTests.m; sourceTree = "<group>"; };
 		FEE98DEE1AD15F1900032605 /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		FEE98DEF1AD15F1900032605 /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
-		FEE98DF11AD15F7F00032605 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../Card.h; sourceTree = "<group>"; };
-		FEE98DF21AD15F7F00032605 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../Card.m; sourceTree = "<group>"; };
 		FEE98DF41AD161C700032605 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
 		FEE98DF51AD161C700032605 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +89,6 @@
 		FEE98DB71AC9D47500032605 /* CardTable */ = {
 			isa = PBXGroup;
 			children = (
-				FEE98DF11AD15F7F00032605 /* Card.h */,
-				FEE98DF21AD15F7F00032605 /* Card.m */,
 				FEE98DEE1AD15F1900032605 /* CardView.h */,
 				FEE98DEF1AD15F1900032605 /* CardView.m */,
 				FEE98DBC1AC9D47600032605 /* AppDelegate.h */,
@@ -240,7 +235,6 @@
 				FEE98DBE1AC9D47600032605 /* AppDelegate.m in Sources */,
 				FEE98DC11AC9D47600032605 /* CardTable.xcdatamodeld in Sources */,
 				FEE98DF01AD15F1900032605 /* CardView.m in Sources */,
-				FEE98DF31AD15F7F00032605 /* Card.m in Sources */,
 				FEE98DC41AC9D47600032605 /* ViewController.m in Sources */,
 				FEE98DBB1AC9D47600032605 /* main.m in Sources */,
 				FEE98DF61AD161C700032605 /* Deck.m in Sources */,
@@ -434,6 +428,7 @@
 				FEE98DDD1AC9D47600032605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEE98DDE1AC9D47700032605 /* Build configuration list for PBXNativeTarget "CardTableTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +437,7 @@
 				FEE98DE01AC9D47700032605 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
