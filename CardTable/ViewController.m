@@ -31,17 +31,20 @@
     NSLog(@"width: %ld,height: %ld",(long)width,(long)height);
     NSLog(@"self.view.bounds: %@",NSStringFromCGRect(self.view.bounds));
     
-    CGFloat columnSize = width/7;
+    CGFloat columnSize = 50;
     NSLog(@"col size: %f",columnSize);
  
+    NSArray * possibleXPositions = @[@325,@275,@225,@175,@125,@75,@25];
+    for (NSString *item in possibleXPositions) {
+        NSLog(@"%@", item);
+    }
     int numberOfCardsToDeal = 7;
     while (numberOfCardsToDeal>0) {
         
-        for (int x = width; x > 0; x = x - columnSize)
+        for (NSInteger x = width-50; x > 0; x = x - columnSize)
         {
             CGFloat pointX = x;
             CGFloat pointY = 100;
-
             for (int j = 0 ; j < numberOfCardsToDeal ; j++)
             {
                 pointY = pointY + 20;
@@ -51,11 +54,11 @@
                 [self.view addSubview:newView];
             }
             numberOfCardsToDeal--;
-
         }
-
-   
     }
+}
+
+-(void)snapToColumn{
     
 }
 

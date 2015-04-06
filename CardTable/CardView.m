@@ -60,8 +60,40 @@
                                    self.center.y + (touchedPoint.y - currentPoint.y));
     NSLog(@"newPoint: %@",NSStringFromCGPoint(newPoint));
     
+
     self.center = newPoint;
     
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"self.centre %@",NSStringFromCGPoint(self.center));
+    CGPoint newPoint = self.center;
+    NSArray * possibleXPositions = @[@325,@275,@225,@175,@125,@75,@25];
+   
+    if (newPoint.x >= 0 && newPoint.x < 50) {
+        newPoint.x = 50;
+    } else if(newPoint.x >= 50 && newPoint.x < 100){
+        newPoint.x = 100;
+    }
+     else if(newPoint.x >= 100 && newPoint.x < 150){
+         newPoint.x = 150;
+     }
+     else if(newPoint.x >= 150 && newPoint.x < 200){
+         newPoint.x = 200;
+     }
+     else if(newPoint.x >= 200 && newPoint.x < 250){
+         newPoint.x = 250;
+     }
+     else if(newPoint.x >= 250 && newPoint.x < 300){
+         newPoint.x = 300;
+     }
+     else if(newPoint.x >= 300 && newPoint.x < 350){
+         newPoint.x = 350;
+     }
+    else{
+        newPoint.x =  newPoint.x;
+    }
+    self.center = newPoint;
 }
 
 @end
