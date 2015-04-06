@@ -26,7 +26,8 @@
     
     if(self){
         self.backgroundColor = RANDOM_COLOR;
-        [self.layer setCornerRadius:30.0f];
+        
+        [self.layer setCornerRadius:3.0f];
         
         // border
         [self.layer setBorderColor:[UIColor lightGrayColor].CGColor];
