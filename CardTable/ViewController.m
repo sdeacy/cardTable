@@ -17,14 +17,46 @@
 
 -(void) viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor greenColor];
 
 //    UIView *myBox  = [[UIView alloc] initWithFrame:CGRectMake(180, 35, 10, 10)];
 //    myBox.backgroundColor = [UIColor lightGrayColor];
 //    [self.view addSubview:myBox];
     
-    cardView *newView = [[cardView alloc] initWithFrame: CGRectMake(10, 10, 30, 70)];
-    [self.view addSubview:newView];
+    
+    //divide screen into 7 columns
+    CGSize size = self.view.bounds.size;
+    NSInteger width = size.width;
+    NSInteger height = size.height;
+    NSLog(@"width: %ld,height: %ld",(long)width,(long)height);
+    NSLog(@"self.view.bounds: %@",NSStringFromCGRect(self.view.bounds));
+    
+    CGFloat columnSize = width/7;
+    NSLog(@"col size: %f",columnSize);
+ 
+    int numberOfCardsToDeal = 7;
+    while (numberOfCardsToDeal>0) {
+        
+        for (int x = width; x > 0; x = x - columnSize)
+        {
+            CGFloat pointX = x;
+            CGFloat pointY = 100;
+
+            for (int j = 0 ; j < numberOfCardsToDeal ; j++)
+            {
+                pointY = pointY + 20;
+                NSLog(@"\nno. cards:%d x:%f y:%f",numberOfCardsToDeal,pointX,pointY);
+                NSLog(@"\n--------");
+                cardView *newView = [[cardView alloc] initWithFrame: CGRectMake(pointX, pointY, 50, 70)];
+                [self.view addSubview:newView];
+            }
+            numberOfCardsToDeal--;
+
+        }
+
+   
+    }
+    
 }
 
 
@@ -39,12 +71,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-//    [super viewWillAppear:animated];
-//    //Add gradient background
-//    CAGradientLayer *bgLayer = [BackgroundLayer greenGradient];
-//    bgLayer.frame = self.view.bounds;
-//    [self.view.layer insertSublayer:bgLayer atIndex:0];
-    
+
     }
 
 - (void)viewDidAppear:(BOOL)animated
