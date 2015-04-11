@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE971D0B1AD30F4A00385173 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = FE971D0A1AD30F4A00385173 /* Card.m */; };
 		FEE98DBB1AC9D47600032605 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DBA1AC9D47600032605 /* main.m */; };
 		FEE98DBE1AC9D47600032605 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DBD1AC9D47600032605 /* AppDelegate.m */; };
 		FEE98DC11AC9D47600032605 /* CardTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEE98DBF1AC9D47600032605 /* CardTable.xcdatamodeld */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE971D091AD30F4A00385173 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		FE971D0A1AD30F4A00385173 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		FEE98DB51AC9D47500032605 /* CardTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE98DB91AC9D47600032605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEE98DBA1AC9D47600032605 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 		FEE98DB71AC9D47500032605 /* CardTable */ = {
 			isa = PBXGroup;
 			children = (
+				FE971D091AD30F4A00385173 /* Card.h */,
+				FE971D0A1AD30F4A00385173 /* Card.m */,
 				FEE98DEE1AD15F1900032605 /* CardView.h */,
 				FEE98DEF1AD15F1900032605 /* CardView.m */,
 				FEE98DBC1AC9D47600032605 /* AppDelegate.h */,
@@ -237,6 +242,7 @@
 				FEE98DF01AD15F1900032605 /* CardView.m in Sources */,
 				FEE98DC41AC9D47600032605 /* ViewController.m in Sources */,
 				FEE98DBB1AC9D47600032605 /* main.m in Sources */,
+				FE971D0B1AD30F4A00385173 /* Card.m in Sources */,
 				FEE98DF61AD161C700032605 /* Deck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
